@@ -1,4 +1,4 @@
-defmodule WebrtcServerTest do
+defmodule ServerTest do
   use ExUnit.Case
 
   test "child_spec/1" do
