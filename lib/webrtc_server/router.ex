@@ -1,4 +1,4 @@
-defmodule WebrtcServer.Router do
+defmodule Server.Router do
   import Jason
 
   def encode_data(data) do

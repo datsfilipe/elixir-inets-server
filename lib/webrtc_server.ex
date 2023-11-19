@@ -1,12 +1,12 @@
-defmodule WebrtcServer do
-  import WebrtcServer.Router
+defmodule Server do
+  import Server.Router
 
   require Record
   Record.defrecord :httpd, Record.extract(:mod, from_lib: "inets/include/httpd.hrl")
 
   def child_spec(_) do
     opts = [
-      server_name: 'webrtc_server',
+      server_name: 'server',
       server_root: '/tmp',
       document_root: '/tmp',
       port: 3000,
